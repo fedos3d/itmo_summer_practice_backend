@@ -17,16 +17,6 @@ model Route {
     id      Int      @id @default(autoincrement())
     routeTitle   String
     routeDescription String
-    routePoint RoutePoint[]
+    routePoint Json
     routePic String
-}
-
-// I WANT TO SERIALIZE IT AS JSON AND PUT INSIDE ROUTE MODEL
-model RoutePoint {
-    id           Int    @id @default(autoincrement())
-    latitude     Float
-    longtitude   Float
-    text         String
-    route        Route?     @relation(fields: [routeId], references: [id])
-    routeId      Int?
 }

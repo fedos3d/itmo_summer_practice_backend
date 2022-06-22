@@ -1,11 +1,9 @@
-
-import {RoutePoint} from './routePoint.entity'
-
+import { RoutePoint } from './routePoint.entity';
 
 export class Route {
-  id: number ;
-routeTitle: string ;
-routeDescription: string ;
-routePoint?: RoutePoint[] ;
-routePic: string ;
+  id: number;
+  routeTitle: string;
+  routeDescription: string;
+  routePoint?: RoutePoint[];
+  routePic: string;
 }

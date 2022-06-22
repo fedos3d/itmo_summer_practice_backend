@@ -1,11 +1,13 @@
-import { ApiProperty } from "@nestjs/swagger";
-
+import { ApiProperty } from '@nestjs/swagger';
+import { RoutePoint } from './routePoint.entity';
 
 export class UpdateRouteDto {
   @ApiProperty()
-  routeTitle?: string;
+  routeTitle: string;
   @ApiProperty()
-  routeDescription?: string;
+  routeDescription: string;
   @ApiProperty()
-  routePic?: string;
+  routePic: string;
+  @ApiProperty({ type: () => [RoutePoint] })
+  routePoints: RoutePoint;
 }

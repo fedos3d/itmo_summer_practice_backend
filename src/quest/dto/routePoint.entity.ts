@@ -1,17 +1,12 @@
-
-import {Route} from './route.entity'
-import { ApiProperty } from "@nestjs/swagger";
-
+import { ApiProperty } from '@nestjs/swagger';
 
 export class RoutePoint {
   @ApiProperty()
-  id: number ;
+  id: number;
   @ApiProperty()
-  latitude: number ;
+  latitude: number;
   @ApiProperty()
-  longtitude: number ;
+  longtitude: number;
   @ApiProperty()
-  text: string ;
-  route?: Route  | null;
-routeId: number  | null;
+  text: string;
 }
